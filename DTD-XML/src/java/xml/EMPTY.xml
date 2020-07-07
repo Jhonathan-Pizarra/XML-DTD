@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE marcadores[
+    <!ELEMENT marcadores EMPTY> <!--No debe haber contenido en un elemetno-->
+]>
+
+<marcadores/>
+
+<!--
+<marcadores>
+    está bien estructurado, si, pero no cumple las reglas de validacion EMPTY
+<marcadores/>
+-->
+    

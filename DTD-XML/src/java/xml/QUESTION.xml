@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+el elemento puede aparecer o no, pero solo una vez
+-->
+
+<!DOCTYPE marcadores [
+    <!ELEMENT marcadores ANY>
+    <!ELEMENT prueba (a,b?)> <!--etiqueta prueba con hijos (a,b)-->
+     <!--debo definir que quiero-->
+     <!ELEMENT a ANY> 
+     <!ELEMENT b ANY> 
+
+]>
+
+<marcadores>
+    
+    
+    <prueba>
+        <a></a>
+        <b></b> <!--este es opcional y solo puede aparecer una vez--> 
+ 
+    </prueba>
+    
+    
+</marcadores>

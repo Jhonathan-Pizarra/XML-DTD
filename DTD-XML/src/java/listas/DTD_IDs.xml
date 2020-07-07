@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE Factura SYSTEM 'FacturaDTD.dtd'> <!--Referenciamos-->
+
+<Factura>
+    
+    <codigo></codigo>
+    <nombre></nombre>
+    <precio></precio>
+    <proveedor id="13">
+        <nombrepro></nombrepro>
+        <direccion sentido="sur"></direccion>
+    </proveedor>
+   
+     
+</Factura>

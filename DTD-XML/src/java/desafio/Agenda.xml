@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE agenda SYSTEM 'AgendaDTD.dtd'> <!--Referenciamos-->
+
+<agenda>
+    <contacto>
+        <nombre>Jhonathan</nombre>
+        <apellido>Pizarra</apellido>
+        <telefono pais="EC">0990803129</telefono>
+        <email>jhonnathan.pizarra@epn.edu.ec</email>
+        <direccion>
+            <calle>Solanda</calle>
+            <numero>26</numero>
+            <cp>173101</cp>
+        </direccion>
+    </contacto>
+    
+    <contacto>
+        <nombre>Erick</nombre>
+        <apellido>Bolaños</apellido>
+        <apellido>Guerrero</apellido>
+        <telefono pais="JAP">0998754865</telefono>
+        <!--Email puede o no haber-->
+        <direccion>
+            <calle>San Bartolo</calle>
+            <numero>23</numero>
+            <cp>156023</cp>
+        </direccion>
+    </contacto>
+ 
+</agenda>

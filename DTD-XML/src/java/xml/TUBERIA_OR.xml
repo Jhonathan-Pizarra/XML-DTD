@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Recuerda que con | "Or" el documenuento contiene uno de los 3 elementos
+a, b o c
+-->
+
+<!DOCTYPE marcadores [
+    <!ELEMENT marcadores ANY>
+    <!ELEMENT prueba (a|b|c)> <!--etiqueta prueba con hijos (a,b,c)-->
+    <!--debo definir que quiero-->
+    <!ELEMENT a ANY> 
+    <!ELEMENT b ANY> 
+    <!ELEMENT c ANY> 
+    <!--<!ELEMENT c ANY> -->
+]>
+
+<marcadores>
+    
+    <prueba>
+        <a></a>
+    </prueba>
+    
+    
+</marcadores>

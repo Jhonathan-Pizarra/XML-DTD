@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!ELEMENT Factura (codigo, nombre, precio, proveedor)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT proveedor (nombrepro, direccion)>
+<!--Qué quiero de los hijos-->
+<!ELEMENT nombrepro (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!--debemos especificar que atributo tiene una lista y qué lo contiene-->
+<!ATTLIST proveedor id CDATA #REQUIRED><!--Estampos diciendo que debe estar si o si, en provvedor el atrobuto "id"-->
+<!ATTLIST direccion sentido (norte|centro|sur) #REQUIRED> <!--Estamos diciendo que el id debe ser sur, centro, o  norte-->

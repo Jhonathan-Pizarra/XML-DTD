@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+En ANY el documento puede tener calquer cosa, texto, elementos, etc.
+cuando utilices any pudes tener cualquier cosa, pero debes definir los eleementos
+que vas a ausar
+
+-->
+
+<!DOCTYPE marcadores [
+    <!ELEMENT marcadores ANY>
+    <!ELEMENT nada ANY> <!--debo declarar la etiqueta-->
+   
+]>
+
+<marcadores>
+    
+    <nada/>
+    <nada>
+        
+    </nada>
+    Into
+    
+    <prueba>
+        <a></a>
+        <b></b>
+        <c></c>
+    </prueba>
+    
+    
+</marcadores>
