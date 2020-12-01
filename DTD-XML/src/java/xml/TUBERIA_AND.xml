@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+para los elementos hijos (a,b,c) debo definir que es lo que quiero
+-->
+
+<!DOCTYPE marcadores [
+    <!ELEMENT marcadores ANY>
+    <!ELEMENT prueba (a,b,c)> <!--etiqueta prueba con hijos (a,b,c)-->
+     <!--debo definir que quiero-->
+     <!ELEMENT a ANY> 
+     <!ELEMENT b ANY> 
+     <!ELEMENT c ANY> 
+     <!--<!ELEMENT c EMPY> ¿qué pasa si hago un mix-->
+]>
+
+<marcadores>
+    
+    <prueba>
+        <a></a>
+        <b></b>
+        <c></c>
+    </prueba>
+    
+    
+</marcadores>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--Interno-->
+
+<!DOCTYPE pizzas [
+    <!ELEMENT pizzas (pizza)*>
+    <!ELEMENT pizza (ingrediente+)>
+    <!ELEMENT ingrediente ANY>
+    <!ELEMENT precio ANY>
+    
+    <!ATTLIST ingrediente nombre CDATA #REQUIRED> 
+    <!ATTLIST pizza nombre CDATA #REQUIRED>
+    <!ATTLIST pizza precio CDATA "14" > <!--$8,00 es predeterminado, per se sobreescribe por $8,00-->
+]>
+
+<pizzas>
+    <pizza nombre="Hawayana" precio="14">
+        <ingrediente nombre="Piña"/>
+        <ingrediente nombre="Queso"/>
+        <ingrediente nombre="Champiñon"/>
+    </pizza>
+    
+</pizzas>

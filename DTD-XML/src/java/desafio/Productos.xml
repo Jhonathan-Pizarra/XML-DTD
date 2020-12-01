@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--Interno-->
+<!DOCTYPE productos [
+   <!--Validación a nivel de elementos-->
+   <!ELEMENT productos  (producto)*> <!--productos es el elemento raíz y luego tiene una serie de hijos-->
+   <!-- Validaciones a nivel de atributos-->
+   <!ELEMENT producto (identificacion, nombre)> <!--Aca especificamos cuales son los hijos del hijo de productos y cómo deben estar si o si estructurados -->
+   <!ELEMENT nombre (#PCDATA)> <!--#PCDATA dice que puede o no contenter texto nuestro elemento--> 
+   <!ELEMENT identificacion ANY>
+   <!ELEMENT codigo (#PCDATA)>
+   <!ELEMENT id (#PCDATA)>
+
+ 
+]>
+
+
+<productos>
+    <producto>
+        <identificacion>
+            Quedan 30 unidades.
+            <codigo>VIN456</codigo>
+        </identificacion>
+        <nombre>VINO</nombre>
+
+    </producto>
+    
+   
+     <producto>
+        <identificacion>
+            <codigo>VIN456</codigo>
+            <id>6353</id>
+            No hay stock.
+        </identificacion>
+        <nombre>Aceite</nombre>
+    </producto>
+ 
+</productos>
+
+
+
+<!--Validación a nivel de elementos
+<!ELEMENT productos  (producto)*> //productos es el elemento raíz y luego tiene una serie de hijos
+
+<Validaciones a nivel de atributos
+<!ELEMENT producto (identificacion, nombre)> //Aca especificamos cuales son los hijos del hijo de productos y cómo deben estar si o si estructurados 
+<!ELEMENT identificacion  (#PCDATA | codigo | id)*>//Aca especificamos cuales son los hijos de los hijos del hijo de productos y cómo deben estar si o si estructurados y un #PCDATA
+<!ELEMENT nombre (#PCDATA)> //#PCDATA dice que puede o no contenter texto nuestro elemento
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+
+
+Análisis
+Lo que usé es la teoría de los elementos mixtos! 
+En los documentos XML narrativos como es XHTML es muy común que dentro de un elemento que en su mayor parte consiste texto plano se necesite insertar otros elementos. 
+A este modelo de contenido se le denomina contenido mixto, y en una DTD solamente se puede indicar con una lista exhaustiva del contenido posible agrupada y con el sufijo *
+
+En cristianas palabras yo le digo "mi elemento, información, puede tener texto, o puede tener código, o puede tener un id" y luego con el "*" le digo
+Puede que se repita alguno de esos casos es decir, que puede haber otro id, otro códifo o texto dentro de identificacion...
+-->

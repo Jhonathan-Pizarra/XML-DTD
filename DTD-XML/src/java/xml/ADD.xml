@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+El elelemto aparece una o más veces, pero no puede no aparecer
+-->
+
+<!DOCTYPE marcadores [
+    <!ELEMENT marcadores ANY>
+    <!ELEMENT prueba (a+,b)> <!--etiqueta prueba con hijos (a,b)-->
+     <!--debo definir que quiero-->
+     <!ELEMENT a ANY> 
+     <!ELEMENT b ANY> 
+
+]>
+
+<marcadores>
+    
+    
+    <prueba>
+        <a></a>
+        <a></a>
+        <a/>
+        <b></b> <!--las etiquetas b DEBEN estar después de la a-->
+        
+ 
+    </prueba>
+    
+    
+</marcadores>

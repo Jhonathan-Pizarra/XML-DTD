@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+* significa que el elemento (elemento) puede aparecer una o mas veces o ninnguna vez
+
+-->
+
+<!DOCTYPE root SYSTEM 'null'[
+
+    <!ELEMENT marcadores (pagina)*> <!--marcadores es el elemento raíz y luego tiene una serie de hijos-->
+]>
+
+<marcadores>
+    <pagina>
+        
+    </pagina>
+    
+</marcadores>

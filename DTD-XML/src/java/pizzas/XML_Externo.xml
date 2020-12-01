@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE recetas SYSTEM 'DTD_Dato.dtd'> <!--Referenciamos-->
+
+
+<recetas>
+    <receta>
+        <nombre>Galletas</nombre>
+        <tipo definicion="postre" />
+        <ingredientes>
+            <ingrediente nombre="Leche" cantidad="12Lt"/>
+            <ingrediente nombre="Chocolate" cantidad="5Kg"/>
+            <ingrediente nombre="Chispas" cantidad="10Lb"/>
+        </ingredientes>
+        
+        <calorias>45Cal</calorias>
+        <pasos>
+            <paso orden="x001">Vacias leche en un plato</paso>
+            <paso orden="x002">Comerse el chocolate</paso>
+            <paso orden="x003">Tomarse la leche con las chispas</paso>
+        </pasos>
+        <dificultad>facil</dificultad>
+        <tiempo>11 minutos</tiempo>
+        <elaboracion>nivel2</elaboracion>
+        
+    </receta>
+    
+     <receta>
+        <nombre>Patacones</nombre>
+        <tipo definicion="entrante" />
+        <ingredientes>
+            <ingrediente nombre="verde" cantidad="12Lt"/>
+            <ingrediente nombre="aceite" cantidad="5Kg"/>
+            <ingrediente nombre="sal" cantidad="10Lb"/>
+        </ingredientes>
+        
+        <calorias>45Cal</calorias>
+        <pasos>
+            <paso orden="x004">Cortar en rodajas anchas</paso>
+            <paso orden="x005">Freir hasta el dorado</paso>
+            <paso orden="x006">Aplastarlos</paso>
+            <paso orden="x007">Volver a Freir</paso>
+        </pasos>
+        <dificultad>facil</dificultad>
+        <tiempo>11 minutos</tiempo>
+        <elaboracion>nivel2</elaboracion>
+        
+    </receta>
+    
+</recetas>

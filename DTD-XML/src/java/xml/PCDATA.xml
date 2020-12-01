@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+* significa que el elemento (elemento) puede aparecer una o mas veces o ninnguna vez, pero debemos definir sus hijos
+
+
+-->
+
+<!DOCTYPE marcadores[
+
+    <!ELEMENT marcadores (pagina)*> <!--marcadores es el elemento raíz y luego tiene una serie de hijos-->
+    <!ELEMENT pagina (nombre, descripcion, url)> <!--Aca especificamos cuales son los hijos de página--> 
+    <!--deemos definir el contenido de cada hijo-->    
+    <!ELEMENT nombre (#PCDATA)> 
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+]>
+
+<marcadores>
+    <pagina>
+        <nombre></nombre>
+        <descripcion></descripcion>
+        <url></url>
+        
+    </pagina>
+    
+    <pagina>
+        <nombre></nombre>
+        <descripcion></descripcion>
+        <url></url>
+
+    </pagina>
+    
+</marcadores>

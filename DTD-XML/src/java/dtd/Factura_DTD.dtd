@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <!--Debes verificar tu DTD para que pueda ser referenciado-->
+ <!--Validaciones a nivel de elementos-->
+<!ELEMENT Factura (codigo, nombre, precio, proveedor)>
+<!-- Validaciones a nivel de atributos-->
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT proveedor (nombrepro, direccion)>
+<!--Qué quiero de los hijos-->
+<!ELEMENT nombrepro (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+
+
+
